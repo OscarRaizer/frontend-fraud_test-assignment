@@ -26,7 +26,6 @@ Before starting, make sure you have the following tools installed:
 
 ---
 
-
 ## Running a Live Server
 
 You can use `live-server` to serve your project locally for development.

@@ -77,7 +77,7 @@ function renderResult(port, status, time) {
   resultsDiv.appendChild(div);
 }
 
-async function scanPorts() {
+export async function scanPorts() {
   const resultsDiv = document.getElementById("results");
 
   const statusSpan = document.createElement("span");
