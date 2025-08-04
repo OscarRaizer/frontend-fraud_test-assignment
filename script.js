@@ -71,7 +71,8 @@ async function baseline(testPorts) {
 function renderResult(port, status, time) {
   const resultsDiv = document.getElementById("results");
   const div = document.createElement("div");
-  div.textContent = `localhost:${port} - ${status} (${time}ms)`;
+  // div.textContent = `localhost:${port} - ${status} (${time}ms)`; for dev
+  div.textContent = `localhost:${port} - ${status}`; //for prod
   div.className = status === "open" ? "open" : "closed";
   resultsDiv.appendChild(div);
 }
