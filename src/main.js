@@ -1,4 +1,9 @@
-import { getLocalIP } from "./localIpScanner.js";
+import { testMdnsFileAccess } from "./localIpScanner.js";
 import { scanPorts } from "./localHostScanner.js";
-scanPorts();
-getLocalIP();
+
+async function runTests() {
+  await scanPorts();
+  await testMdnsFileAccess();
+}
+
+runTests();

@@ -96,6 +96,5 @@ export async function scanPorts() {
     renderResult(port, status, avgTime);
     await new Promise((resolve) => setTimeout(resolve, 100));
   }
-
   statusSpan.textContent = "Finish!";
 }
